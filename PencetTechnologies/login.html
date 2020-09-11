@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Pencet Technologies</title>
+    <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesform.css">
+</head>
+
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <!-- add essa class -->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="img/PENCET_logo.png" alt="Hdc Agency"> Pencet Technologies
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link" id="home-menu">Home</a>
+                        <a href="index.html#about-area" class="nav-item nav-link" id="about-menu">A Agencia</a>
+                        <a href="index.html#services-area" class="nav-item nav-link" id="services-menu">Serviços</a>
+                        <a href="index.html#team-area" class="nav-item nav-link" id="team-menu">Time</a>
+                        <a href="index.html#portfolio-area" class="nav-item nav-link" id="portfolio-menu">Projetos</a>
+                        <a href="index.html#contact-area" class="nav-item nav-link" id="contact-menu">Contato</a>
+                        <a href="#" class="main-btn" id="login-menu">Entrar</a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div id="area-login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Área de Acesso ao Sistema</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" id="iconUser" src="img/iconuser.png" alt="Pencet Technologies">
+                    </div>
+                    <div class="col-md-6" id="area-access">
+                        <div class="card">
+                            <h3>Login de Usuário</h3>
+                            <form id="register-form" action="">
+                                <div class="full-box">
+                                    <label for="user">Usuário</label>
+                                    <input type="text" name="user" id="user" title="Campo Obrigatorio" required placeholder="Digite seu usuario" data-min-length="2">
+                                </div>
+                                <div class="full-box">
+                                    <label for="lastname">Senha</label>
+                                    <input type="password" name="password" id="password" title="Campo Obrigatorio" required placeholder="Digite sua senha">
+                                </div>
+                                <div class="full-box">
+                                    <input onclick="Login()" id="btn-register" type="submit" value="Acessar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://www.pencet.com.br" target="_blank">Pencet Technologies</a> &copy; 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <script src="js/validaUsuario.js"></script>
+</body>
+
+</html>
